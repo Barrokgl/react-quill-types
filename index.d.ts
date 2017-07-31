@@ -46,6 +46,7 @@ export interface History {
 type MatcherParam = [string | Node, (node: Node, delta: QuillModule.DeltaStatic) => QuillModule.DeltaStatic]
 export interface Clipboard {
     matchers?: MatcherParam[];
+    matchVisual?: boolean;
 }
 
 export interface Modules {
